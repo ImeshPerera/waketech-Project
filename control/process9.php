@@ -51,14 +51,14 @@
 
         $mail = new PHPMailer; 
         $mail->IsSMTP();
-        $mail->Host = 'smtp.gmail.com'; 
+        $mail->Host = '';  // your host if gmail smtp.gmail.com
         $mail->SMTPAuth = true; 
-        $mail->Username = 'education.imeshdilshan@gmail.com'; 
-        $mail->Password = 'ceptvcidaokmacvl';
+        $mail->Username = '';  // your mail
+        $mail->Password = ''; // your mail password
         $mail->SMTPSecure = 'ssl';
-        $mail->Port = 465;
-        $mail->setFrom('education.imeshdilshan@gmail.com', 'Wake Tech Campus'); 
-        $mail->addReplyTo('education.imeshdilshan@gmail.com', 'Wake Tech Campus'); 
+        $mail->Port = ; // smtp port
+        $mail->setFrom('', 'Campus'); // from mail address and sample name
+        $mail->addReplyTo('', 'Campus'); // reply to mail address and sample name
         $mail->addAddress($email); 
         $mail->isHTML(true); 
         $mail->Subject = 'Login Details for Wake Tech Campus Web Portral'; 
